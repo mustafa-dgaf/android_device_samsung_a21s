@@ -28,13 +28,22 @@ TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Whether you are compiling being an OFFICIAL Maintainer:
+INFINITY_BUILD_TYPE := UNOFFICIAL
+
+# Maintainer Name
+INFINITY_MAINTAINER := mustafa
+
+# Whether Including Google Apps
+WITH_GAPPS := false
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
-PRODUCT_NAME := lineage_a21s
+PRODUCT_NAME := infinity_a21s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A217X
+PRODUCT_MODEL := SM-A217F
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 29
 

@@ -29,3 +29,4 @@ TARGET_KERNEL_CONFIG := exynos850-a21snsxx_defconfig
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
