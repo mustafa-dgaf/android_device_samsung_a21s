@@ -30,11 +30,33 @@ TARGET_SCREEN_WIDTH := 720
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Lunch banner maintainer variable
+RISING_MAINTAINER="Mustafa"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+# Set RISING_MAINTAINER for version control 
+# (Optional if builder is setting properties via init_<device>.cpp)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Exynos 850" \
+    RisingMaintainer="Mustafa"
+
+RISING_MAINTAINER := Mustafa
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# GMS build flags, true by default
+# Ship with GMS packages, replaces default AOSP packages with Google manufactured packages.
+WITH_GMS := false
+
+# VANILLA only build flags
+WITH_GMS := false
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
 PRODUCT_NAME := lineage_a21s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A217X
+PRODUCT_MODEL := SM-A217F
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 29
 
