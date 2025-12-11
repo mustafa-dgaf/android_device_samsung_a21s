@@ -30,6 +30,8 @@ TARGET_SCREEN_WIDTH := 720
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+WITH_GMS := false
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
 PRODUCT_NAME := lineage_a21s
