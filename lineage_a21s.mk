@@ -30,11 +30,30 @@ TARGET_SCREEN_WIDTH := 720
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+AXION_MAINTAINER := Mustafa
+TARGET_DISABLE_EPPE := true
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# VIPERFX
+TARGET_INCLUDE_VIPERFX := true
+
+# CPU
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := ondemand
+
+# Flashlight strength
+TORCH_STR_SUPPORTED := true
+
+# Los prebuilts
+TARGET_INCLUDES_LOS_PREBUILTS := true
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
 PRODUCT_NAME := lineage_a21s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A217X
+PRODUCT_MODEL := SM-A217F
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 29
 
