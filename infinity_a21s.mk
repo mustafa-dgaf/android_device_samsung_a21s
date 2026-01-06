@@ -30,14 +30,11 @@ TARGET_SCREEN_WIDTH := 720
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Whether you are compiling being an OFFICIAL Maintainer:
-INFINITY_BUILD_TYPE := UNOFFICIAL
-
 # Maintainer Name
-INFINITY_MAINTAINER := mustafa
+INFINITY_MAINTAINER := Mustafa
 
 # Whether Including Google Apps
-WITH_GAPPS := false
+WITH_GAPPS := true
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
