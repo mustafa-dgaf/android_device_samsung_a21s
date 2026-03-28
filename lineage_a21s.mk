@@ -32,6 +32,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 AXION_MAINTAINER := Mustafa
 TARGET_DISABLE_EPPE := true
+AXION_PROCESSOR := Exynos_850
 
 # Blur
 TARGET_ENABLE_BLUR := true
