@@ -34,7 +34,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 INFINITY_MAINTAINER := Mustafa
 
 # Whether Including Google Apps
-WITH_GAPPS := false
+WITH_GAPPS := true
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := a21s
